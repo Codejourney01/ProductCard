@@ -1,0 +1,119 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    background-color: black;
+}
+.pm-font{
+    font-family:"Fraunces" ;
+}
+.sd-font{
+    font-family: "Montserrat";
+}
+.flex{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.main{
+    width: 100%;
+    height: 100vh;
+   
+}
+.card{
+    width: 90%;
+    max-width: 400px;
+    background-color: white;
+    display: flex;
+    height: 250px;
+}
+.img-side{
+    width: 50%;
+    height: 250px;
+        border-radius: 10px;
+
+}
+.img-side img{
+    width: 100%;
+    height: 100%;
+
+}
+.text-side{
+    padding: 10px 0px 0px 20px;
+}
+.text-side span{
+    font-size: 9px;
+    color: hsl(228, 12%, 48%);
+    letter-spacing: 5px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+.text-side h3{
+    font-size: clamp(1rem,2vw,1.2rem);
+    
+}
+.heading{
+   width: 120px;
+   padding: 5px 0px;
+}
+.para{
+   width: 130px;
+}
+p{
+    font-size: 9px;
+    line-height: 12px;
+    text-align:justify;
+    color: hsl(228, 12%, 48%);
+}
+button{
+    width:120px;
+    height: 20px;
+    background-color: hsl(158, 36%,37%);
+    border: none;
+    color: white;
+    font-size: 10px;
+    gap: 5px;
+    border-radius: 3px;
+}
+button:hover{
+    cursor: pointer;
+    background-color: hsl(158, 42%, 18%);
+}
+
+
+
+
+
+@media only screen and  (max-width:768px) {
+        .card{
+            width: 70%;
+        }
+
+}
+
+@media only screen and (max-width:520px)
+{
+    .card{
+        width: 80%;
+        flex-direction: column;
+        height: auto;
+        padding-bottom: 20px;
+        
+    }
+    .heading{
+        width: 100%;
+    }
+    
+    .img-side img{
+        object-fit: cover;
+
+    }
+    .img-side,.text-side{
+        width: 100%;
+    }
+    p{
+        width: 200px;
+    }
+}
